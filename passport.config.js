@@ -34,7 +34,7 @@ passport.use(new GoogleStrategy({
 passport.use(new FacebookStrategy({
     clientID: process.env.FACEBOOK_CLIENT_ID,
     clientSecret: process.env.FACEBOOK_CLIENT_SECRET,
-    callbackURL: process.env.BASE_URL + FACEBOOK_REDIRECT_URL,
+    callbackURL: process.env.BASE_URL + process.env.FACEBOOK_REDIRECT_URL,
     profileFields: ['id', 'displayName', 'name', 'gender', 'picture.type(large)','email'],
     passReqToCallback: true
 }, async (request, token, refreshToken, profile, done) => {
