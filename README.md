@@ -1,6 +1,29 @@
 # Node-Passport-JWT-Authentication
 Authentication using passport and jwt in node for SPA
 
+## Project directory structure
+```bash
+├── app.js
+├── controllers
+│   └── authController.js
+├── database
+│   ├── conection.js
+│   └── model
+│       └── User.js
+├── middleware
+│   └── authMiddleware.js
+├── package.json
+├── package-lock.json
+├── passport.config.js
+├── README.md
+├── routes
+│   ├── auth.js
+│   └── user.js
+├── util
+│   └── jwt.js
+└── views
+    └── index.ejs
+```
 
 ## Passport Config (passport.config.js)
 > Main part responsible for OAuth2
